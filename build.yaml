@@ -94,9 +94,9 @@ include:
     artifact-name: nice_corne_left_peripheral_oled
 
     # peripheral_left + puchi_ble_v1 + nice_oled
-    ### nice_oled END ###
+  
 
-    ### Xiao_Dongle START ###
+   
 
     # snippet: zmk-usb-logging
     ### Xiao_Dongle END ###
@@ -126,6 +126,13 @@ include:
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\"
     artifact-name: nice_corne_left_oled_rgb
     snippet: rgb-config studio-rpc-usb-uart
+  - board: nice_nano_v2
+    shield: corne_right nice_oled
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\"
+    artifact-name: nice_corne_right_oled_rgb
+    snippet: rgb-config studio-rpc-usb-uart
+    
+    
     ### Pro Micro END ###
   ### CORNE END ###
 
